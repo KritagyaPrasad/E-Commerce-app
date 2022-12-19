@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 
 function Card({item, key}) {
   return (
-    <Link to={ `product/${item.id}`}>
+    <Link className='link' to={ `/product/${item.id}`}>
         <div className="card">
            <div className="image">
               {item.isNew && <span>New Season</span>}
